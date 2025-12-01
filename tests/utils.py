@@ -20,7 +20,9 @@ SCREENSHOT_DIR = os.path.join(os.path.dirname(__file__), "screenshots")
 def get_driver():
     """Create and return a Chrome WebDriver instance."""
     chrome_options = Options()
-    chrome_options.add_argument("--headless")
+    # Set HEADLESS=false to see the browser window locally
+    if os.environ.get("HEADLESS", "true").lower() != "false":
+        chrome_options.add_argument("--headless")
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
     chrome_options.add_argument("--window-size=1920,1080")
