@@ -1,40 +1,40 @@
 [
   {
     "id": "1",
-    "title": "Getting Started with TypeScript",
-    "content": "TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. It offers classes, modules, and interfaces to help you build robust components.\n\nIn this comprehensive guide, we'll explore the basics of TypeScript and how it can improve your development workflow. TypeScript adds optional static typing and class-based object-oriented programming to the language.\n\nBy the end of this tutorial, you'll understand how to set up a TypeScript project, define types, interfaces, and classes, and leverage the full power of the TypeScript compiler.",
+    "title": "TypeScript 시작하기",
+    "content": "TypeScript는 JavaScript에 타입을 추가한 상위 집합으로 일반 JavaScript로 컴파일됩니다. 견고한 컴포넌트를 구축하는 데 도움이 되는 클래스, 모듈, 인터페이스를 제공합니다.\n\n이 포괄적인 가이드에서는 TypeScript의 기초를 살펴보고 개발 워크플로우를 어떻게 개선할 수 있는지 알아봅니다. TypeScript는 선택적 정적 타입 지정 및 클래스 기반 객체 지향 프로그래밍을 언어에 추가합니다.\n\n이 튜토리얼을 마치면 TypeScript 프로젝트 설정 방법, 타입, 인터페이스 및 클래스 정의 방법, 그리고 TypeScript 컴파일러의 전체 기능을 활용하는 방법을 이해할 수 있게 됩니다.",
     "author": "developer123",
     "createdAt": "2024-01-15T10:30:00Z",
-    "category": "Tutorial"
+    "category": "튜토리얼"
   },
   {
     "id": "2",
-    "title": "Best Practices for React Development",
-    "content": "React has become one of the most popular libraries for building user interfaces. Learn about component patterns, hooks best practices, and performance optimization techniques.\n\nIn this article, we'll cover the essential patterns that every React developer should know. From managing state effectively to optimizing renders, these best practices will help you write cleaner, more maintainable code.\n\nWe'll also explore advanced patterns like compound components, render props, and custom hooks that can take your React skills to the next level.",
+    "title": "React 개발 모범 사례",
+    "content": "React는 사용자 인터페이스를 구축하기 위한 가장 인기 있는 라이브러리 중 하나가 되었습니다. 컴포넌트 패턴, Hooks 모범 사례 및 성능 최적화 기법에 대해 알아봅시다.\n\n이 글에서는 모든 React 개발자가 알아야 할 필수 패턴을 다룹니다. 효과적인 상태 관리에서 렌더링 최적화까지, 이러한 모범 사례들은 더 깔끔하고 유지보수하기 쉬운 코드를 작성하는 데 도움이 됩니다.\n\n또한 복합 컴포넌트, Render Props, 커스텀 Hooks과 같은 고급 패턴을 탐색하여 React 기술을 다음 단계로 끌어올릴 수 있습니다.",
     "author": "reactfan",
     "createdAt": "2024-01-14T15:45:00Z",
-    "category": "Best Practices"
+    "category": "모범 사례"
   },
   {
     "id": "3",
-    "title": "Introduction to Node.js",
-    "content": "Node.js is a powerful JavaScript runtime built on Chrome's V8 engine. It's perfect for building scalable network applications and is widely used for backend development.\n\nThis introduction will walk you through the core concepts of Node.js, including the event loop, non-blocking I/O, and the module system. Understanding these fundamentals is crucial for building efficient server-side applications.\n\nWe'll also cover common use cases like building REST APIs, working with databases, and handling file operations.",
+    "title": "Node.js 소개",
+    "content": "Node.js는 Chrome의 V8 엔진을 기반으로 구축한 강력한 JavaScript 런타임입니다. 확장 가능한 네트워크 애플리케이션을 구축하는 데 완벽하며 백엔드 개발에 널리 사용됩니다.\n\n이 소개에서는 이벤트 루프, 논블로킹 I/O, 모듈 시스템을 포함한 Node.js의 핵심 개념을 안내합니다. 효율적인 서버 측 애플리케이션을 구축하려면 이러한 기초를 이해하는 것이 중요합니다.\n\n또한 REST API 구축, 데이터베이스 작업, 파일 작업 처리와 같은 일반적인 사용 사례를 다룹니다.",
     "author": "nodejsexpert",
     "createdAt": "2024-01-13T09:00:00Z",
-    "category": "Tutorial"
+    "category": "튜토리얼"
   },
   {
     "id": "4",
-    "title": "CSS Grid Layout Complete Guide",
-    "content": "CSS Grid Layout is a two-dimensional layout system for the web. It lets you lay out items in rows and columns and has many features that make building complex layouts straightforward.\n\nThis comprehensive guide covers everything from basic grid concepts to advanced techniques. You'll learn how to create responsive layouts without media queries, align items precisely, and build complex page structures with ease.\n\nBy mastering CSS Grid, you'll be able to create layouts that were previously only possible with JavaScript or complex CSS hacks.",
+    "title": "CSS Grid 레이아웃 완벽 가이드",
+    "content": "CSS Grid 레이아웃은 웹을 위한 2차원 레이아웃 시스템입니다. 행과 열에 항목을 배치할 수 있으며 복잡한 레이아웃을 간단하게 구축할 수 있는 많은 기능이 있습니다.\n\n이 포괄적인 가이드는 기본 그리드 개념부터 고급 기법까지 모든 것을 다룹니다. 미디어 쿼리 없이 반응형 레이아웃을 만드는 방법, 항목을 정확하게 정렬하는 방법, 복잡한 페이지 구조를 쉽게 구축하는 방법을 배우게 됩니다.\n\nCSS Grid를 마스터하면 이전에는 JavaScript나 복잡한 CSS 해킹으로만 가능했던 레이아웃을 만들 수 있습니다.",
     "author": "cssmaster",
     "createdAt": "2024-01-12T14:20:00Z",
     "category": "CSS"
   },
   {
     "id": "5",
-    "title": "Understanding JavaScript Promises",
-    "content": "Promises are a fundamental concept in modern JavaScript. They represent a value that may be available now, in the future, or never. Master async programming with this comprehensive guide.\n\nWe'll start with the basics of creating and consuming promises, then move on to more advanced topics like chaining, error handling, and working with multiple promises using Promise.all and Promise.race.\n\nBy the end of this guide, you'll have a solid understanding of asynchronous programming in JavaScript and how to write clean, readable async code.",
+    "title": "JavaScript Promise 이해하기",
+    "content": "Promise는 현대 JavaScript의 기본 개념입니다. 지금 사용 가능하거나 미래에 사용 가능하거나 절대 사용되지 않을 수 있는 값을 나타냅니다. 이 포괄적인 가이드로 비동기 프로그래밍을 마스터하세요.\n\nPromise 생성 및 사용의 기초부터 시작하여 체이닝, 에러 처리, Promise.all 및 Promise.race를 사용한 여러 Promise 작업과 같은 고급 주제로 이동합니다.\n\n이 가이드를 마치면 JavaScript의 비동기 프로그래밍에 대한 확실한 이해와 깔끔하고 읽기 쉬운 비동기 코드를 작성하는 방법을 알게 됩니다.",
     "author": "asyncdev",
     "createdAt": "2024-01-11T11:15:00Z",
     "category": "JavaScript"
