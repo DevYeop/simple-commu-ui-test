@@ -1,0 +1,57 @@
+# Vanilla UI Testboard  
+로컬 환경에서 웹 UI 자동화 테스트를 실습하기 위한 **간단한 커뮤니티 웹 프로젝트**입니다.  
+Node.js 기반 서버와 Vanilla JavaScript UI로 구성되어 있으며,  
+Python + Selenium을 이용한 자동화 테스트를 직접 실행해볼 수 있습니다.
+
+이 프로젝트는 **교육·실습을 위해 제작된 프로젝트**로,  
+복잡한 설정 없이 바로 로컬에서 실행하고 실습할 수 있도록 구성되어 있습니다.
+
+---
+
+## 🚀 빠른 시작
+
+### 1. 프로젝트 클론
+```bash
+git clone https://github.com/DevYeop/vanilla-ui-testboard.git
+cd vanilla-ui-testboard
+```
+### 2. 의존성 설치
+```
+npm install
+```
+### 3. 서버 실행
+```
+npm run dev
+```
+브라우저에서 아래 주소로 접속하여 확인할 수 있습니다.
+```
+http://localhost:5000
+```
+### 🧪 UI 자동화 테스트 실행 (Python + Selenium)
+
+Python 환경이 준비되었다면, 아래 명령어로 테스트 파일을 실행할 수 있습니다.
+```
+python ./tests/파일명.py
+```
+예)
+```
+python ./tests/test_login.py
+python ./tests/test_search.py
+python ./tests/test_theme_toggle.py
+```
+테스트 실행 시 실제 브라우저가 자동으로 열리고
+로그인, 검색, UI 모드 전환 등 다양한 기능이 자동으로 검증됩니다.
+
+### 📚 교육 목적 안내
+
+이 프로젝트는 프로그래밍과 테스트 자동화의 진입 장벽을 낮추기 위해 설계된 실습용 프로젝트입니다.
+복잡한 문법이나 프레임워크 학습보다,
+“브라우저를 자동으로 조작해 보고, UI가 변하는 것을 자동으로 확인하는 경험”에 초점을 맞춥니다.
+
+로컬 환경 설정이 어려운 경우에도
+강의 중 개별적으로 도움을 드립니다.
+
+### 📄 License – MIT License
+
+본 프로젝트는 MIT 라이선스를 따르며, 모든 코드는 학습자들의 성장과 경험을 위해 존재함.
+이 지식을 활용해, 여러분이 실습, 변형, 재구성, 재사용을 마음껏 해보며 다방면으로 활용하길 희망함.
