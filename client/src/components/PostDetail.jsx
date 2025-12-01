@@ -5,14 +5,9 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { ChevronLeft, Clock, User } from "lucide-react";
-import type { Post } from "./PostCard";
 
-interface PostDetailProps {
-  post: Post;
-}
-
-export default function PostDetail({ post }: PostDetailProps) {
-  const formatDate = (dateString: string) => {
+export default function PostDetail({ post }) {
+  const formatDate = (dateString) => {
     const date = new Date(dateString);
     return date.toLocaleDateString("en-US", {
       weekday: "long",

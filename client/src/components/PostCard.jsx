@@ -3,25 +3,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Clock, User } from "lucide-react";
 
-export interface Post {
-  id: string;
-  title: string;
-  content: string;
-  author: string;
-  createdAt: string;
-  category?: string;
-}
-
-interface PostCardProps {
-  post: Post;
-}
-
-export default function PostCard({ post }: PostCardProps) {
+export default function PostCard({ post }) {
   const truncatedContent = post.content.length > 150 
     ? post.content.slice(0, 150) + "..." 
     : post.content;
 
-  const formatDate = (dateString: string) => {
+  const formatDate = (dateString) => {
     const date = new Date(dateString);
     return date.toLocaleDateString("en-US", {
       month: "short",
