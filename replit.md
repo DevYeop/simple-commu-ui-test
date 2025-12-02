@@ -1,7 +1,7 @@
-# React Community Platform
+# Vanilla Community Platform
 
 ## Overview
-A React-based community platform built with Node.js + Express backend and React frontend, featuring user authentication, posts, search functionality, and theme toggling. Designed with Selenium UI automation testing in mind.
+A minimalist community platform built with Node.js + Express backend and React frontend, featuring user authentication, posts, search functionality, and theme toggling. Designed with Selenium UI automation testing in mind.
 
 ## Tech Stack
 - **Backend**: Node.js + Express

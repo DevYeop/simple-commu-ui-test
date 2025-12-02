@@ -26,7 +26,7 @@ export default function HomePage() {
           {isAuthenticated ? (
             <>Welcome back, <span className="text-primary" data-testid="text-welcome-username">{user?.username}</span></>
           ) : (
-            "Welcome to React Community"
+            "Welcome to Vanilla Community"
           )}
         </h1>
         <p className="text-muted-foreground">
