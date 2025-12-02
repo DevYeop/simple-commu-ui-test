@@ -13,9 +13,9 @@ from webdriver_manager.chrome import ChromeDriverManager
 import time
 
 # ========== 설정: 여기서 변수 수정하세요 ==========
-BASE_URL = "http://localhost:5000"
+BASE_URL = "https://leecord.site"
 TEST_USERNAME = "admin"           # 테스트할 사용자명 수정
-TEST_PASSWORD = "admin123"        # 테스트할 비밀번호 수정
+TEST_PASSWORD = "1234"            # 테스트할 비밀번호 수정
 WAIT_TIMEOUT = 10                 # 요소 로드 대기 시간 (초)
 # ==============================================
 
@@ -85,8 +85,9 @@ try:
     
     # URL이 /post/{id} 형태로 변경될 때까지 대기 (성공 확인)
     print("[4-1단계] 게시글 생성 완료 대기 중...")
+    current_url = ""
     try:
-        # 5초 동안 현재 URL이 /post/ 를 포함할 때까지 대기
+        # 10초 동안 현재 URL이 /post/ 를 포함할 때까지 대기
         for i in range(50):  # 10초간 0.2초마다 확인
             current_url = driver.current_url
             if "/post/" in current_url and current_url != f"{BASE_URL}/post/create":
