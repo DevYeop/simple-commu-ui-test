@@ -29,7 +29,7 @@ export default function EditPostPage() {
   const { data: post, isLoading } = useQuery<Post>({
     queryKey: ["/api/posts", params?.id],
     queryFn: async () => {
-      const response = await fetch(`/api/posts/${params?.id}`);
+      const response = await fetch(`/api/posts/${params?.id}`, { credentials: "include" });
       if (!response.ok) throw new Error("Failed to fetch post");
       return response.json();
     },
@@ -43,6 +43,11 @@ export default function EditPostPage() {
       content: post?.content || "",
       category: post?.category || "",
     },
+    values: post ? {
+      title: post.title,
+      content: post.content,
+      category: post.category || "",
+    } : undefined,
   });
 
   const updateMutation = useMutation({
