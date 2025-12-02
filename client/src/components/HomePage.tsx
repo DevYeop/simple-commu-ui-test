@@ -1,20 +1,24 @@
-import { Link, useLocation } from "wouter";
-import { useAuth } from "./AuthContext";
-import { useQuery } from "@tanstack/react-query";
-import PostCard, { Post } from "./PostCard";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Skeleton } from "@/components/ui/skeleton";
-import { MessageSquare, Plus } from "lucide-react";
+import { Link, useLocation } from 'wouter';
+import { useAuth } from './AuthContext';
+import { useQuery } from '@tanstack/react-query';
+import PostCard, { Post } from './PostCard';
+import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Skeleton } from '@/components/ui/skeleton';
+import { MessageSquare, Plus } from 'lucide-react';
 
 export default function HomePage() {
   const { user, isAuthenticated } = useAuth();
 
-  const { data: posts, isLoading, error } = useQuery<Post[]>({
-    queryKey: ["/api/posts", { limit: 5 }],
+  const {
+    data: posts,
+    isLoading,
+    error,
+  } = useQuery<Post[]>({
+    queryKey: ['/api/posts', { limit: 20 }],
     queryFn: async () => {
-      const response = await fetch("/api/posts?limit=5");
-      if (!response.ok) throw new Error("Failed to fetch posts");
+      const response = await fetch('/api/posts?limit=20');
+      if (!response.ok) throw new Error('Failed to fetch posts');
       return response.json();
     },
   });
@@ -24,15 +28,23 @@ export default function HomePage() {
       <div className="mb-8">
         <h1 className="mb-2 text-3xl font-bold md:text-4xl">
           {isAuthenticated ? (
-            <>Welcome back, <span className="text-primary" data-testid="text-welcome-username">{user?.username}</span></>
+            <>
+              Welcome back,{' '}
+              <span
+                className="text-primary"
+                data-testid="text-welcome-username"
+              >
+                {user?.username}
+              </span>
+            </>
           ) : (
-            "Welcome to React Community"
+            'Welcome to React Community'
           )}
         </h1>
         <p className="text-muted-foreground">
           {isAuthenticated
-            ? "Here are the latest posts from our community"
-            : "Join our community to share and discover great content"}
+            ? 'Here are the latest posts from our community'
+            : 'Join our community to share and discover great content'}
         </p>
       </div>
 
@@ -44,7 +56,11 @@ export default function HomePage() {
           </h2>
           {isAuthenticated && (
             <Link href="/post/create">
-              <Button size="sm" className="gap-2" data-testid="button-create-post">
+              <Button
+                size="sm"
+                className="gap-2"
+                data-testid="button-create-post"
+              >
                 <Plus className="h-4 w-4" />
                 Create Post
               </Button>
@@ -73,7 +89,9 @@ export default function HomePage() {
             <Card>
               <CardContent className="flex flex-col items-center justify-center py-12 text-center">
                 <MessageSquare className="mb-4 h-12 w-12 text-muted-foreground" />
-                <h3 className="mb-2 text-lg font-semibold">Error loading posts</h3>
+                <h3 className="mb-2 text-lg font-semibold">
+                  Error loading posts
+                </h3>
                 <p className="text-muted-foreground">
                   Something went wrong. Please try again later.
                 </p>
