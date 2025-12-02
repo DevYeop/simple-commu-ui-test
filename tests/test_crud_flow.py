@@ -49,20 +49,16 @@ try:
     login_button = driver.find_element(By.CSS_SELECTOR, '[data-testid="button-login-submit"]')
     login_button.click()
     
-    time.sleep(2)
-    print("✓ 로그인 완료")
-    
-    # 2단계: 홈페이지로 이동 (AuthContext 초기화)
-    print("\n[2단계] 홈페이지로 이동 (인증 상태 확인 중)...")
-    driver.get(f"{BASE_URL}/")
-    time.sleep(3)
-    print("✓ 홈페이지 로드됨")
+    # 로그인 완료 확인: "Create Post" 버튼이 나타날 때까지 대기 (세션 설정 완료)
+    print("\n[1-1단계] 로그인 완료 확인 중...")
+    wait.until(EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'Create Post')]")))
+    print("✓ 로그인 완료 및 인증 상태 확인됨")
     
     # 2-1단계: 게시글 생성 버튼 클릭
-    print("\n[2-1단계] 게시글 생성 버튼 클릭...")
-    create_button = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'Create Post')]")))
+    print("\n[2단계] 게시글 생성 버튼 클릭...")
+    create_button = driver.find_element(By.XPATH, "//button[contains(text(), 'Create Post')]")
     create_button.click()
-    time.sleep(3)
+    time.sleep(2)
     print("✓ 게시글 생성 페이지 로드됨")
     
     # 3단계: 게시글 작성
